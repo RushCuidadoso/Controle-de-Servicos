@@ -21,24 +21,3 @@ class conexion():
     def desconectar(self, con):
         if con:
             con.close()
-
-    #def serialconfig(self):
-        #db_host = '104.28.7.238:13306'
-        #usuario = 'serialconfig'
-        #clave = 'mYserialcOnfigsQl825'
-        #base_de_datos = 'serialconfig'
-        #db = MySQLdb.connect("host='104.28.7.238:13306' user='serialconfig' passwd='mYserialcOnfigsQl825' db='serialconfig'")
-        
-        
-        #db = MySQLdb.connect(host="sql5.freemysqlhosting.net",user="sql5105806",passwd="yY2PtQjJx7",db="sql5105806")
-        #if db:
-            #print 'conectado'
-            #return db
-        
-        #else:
-            #print "no se conecto"
-            
-#cd=conexion()
-#cd.serialconfig()
-            #       xeT)t$1sFyUDs2V5
-            #       yY2PtQjJx7
