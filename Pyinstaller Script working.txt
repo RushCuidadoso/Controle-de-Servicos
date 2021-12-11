@@ -1,0 +1,1 @@
+pyinstaller -D -F -w "Direccion" C:\Users\Denis\Documents\PythonProjects\Kosloski

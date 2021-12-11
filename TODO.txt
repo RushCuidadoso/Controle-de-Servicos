@@ -1,0 +1,51 @@
+Crear formularios para cada tabla:
+Marca ok
+Medida ok
+Cliente ok
+Funcionario ok
+Cargo ok
+Fornecedor ok
+Representante ok
+Telefono repre ok
+Producto ok
+Equipamiento ok
+Entrada ok 
+Entrada detalle ok
+Servicio ok feo
+Servicio detalle ok
+--------------------------------------------------------------------------
+Crear el codigo para cada tabla
+Marca ok
+Medida ok
+Producto ok
+--------------------------------------------------
+Fornecedor ok
+Representante ok
+Telefono repre ok
+---------------------------------------------------
+Entrada ok
+Entrada detalle ok
+----------------------------------------------------
+Cliente ok falta eliminar ok
+Funcionario ok falta eliminar ok
+-----------------------------------------------------
+Equipamiento falta eliminar ok
+----------------------------------------------------
+Servicio ok
+Servicio detalle ok
+
+Todos:
+Se ingressar 0 no campo de codigo de barra vai abrir janela de produto para buscar.
+Arreglar tabulaciones de las ventanas. ok
+Incluir boton enter en las tabulaciones.
+
+En servicio:
+Incluir ciclagem y voltagem en servicio y print
+
+Cambiar .ui a .py
+pyuic4.bat -x filename.ui -o filename.py
+
+TODO
+Wtf .decode isnt working
+Arrumar totais das ordems de serviço
+aprender subprocess

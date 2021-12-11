@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmlista</class>
+ <widget class="QWidget" name="frmlista">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lista de ordems de serviço</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1101</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTableWidget" name="tabla">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>1081</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+   </widget>
+   <widget class="QComboBox" name="cboestado">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+    <item>
+     <property name="text">
+      <string>Todos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aberto</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Em processo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Concluido</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDateEdit" name="datemin">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="datemax">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="date">
+     <date>
+      <year>2020</year>
+      <month>1</month>
+      <day>1</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkdata">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Data</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>46</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Estado:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblsinreg">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>260</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sem Registros</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtbuscar">
+    <property name="geometry">
+     <rect>
+      <x>82</x>
+      <y>10</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nro. Ordem:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>até</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnimprimir">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>10</y>
+      <width>75</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Imprimir</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbofuncio">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Portuguese" country="Brazil"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblindice">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>60</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkfuncio">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>10</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Funcionario</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="totalcobrado">
+    <property name="geometry">
+     <rect>
+      <x>962</x>
+      <y>520</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>520</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TOTAL COBRADO:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="total">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>520</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>520</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TOTAL:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="totalcomissao">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>520</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>520</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TOTAL COMISSÃO:</string>
+    </property>
+   </widget>
+   <zorder>lblindice</zorder>
+   <zorder>tabla</zorder>
+   <zorder>cboestado</zorder>
+   <zorder>datemin</zorder>
+   <zorder>datemax</zorder>
+   <zorder>checkdata</zorder>
+   <zorder>label</zorder>
+   <zorder>lblsinreg</zorder>
+   <zorder>txtbuscar</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>btnimprimir</zorder>
+   <zorder>cbofuncio</zorder>
+   <zorder>checkfuncio</zorder>
+   <zorder>totalcobrado</zorder>
+   <zorder>label_4</zorder>
+   <zorder>total</zorder>
+   <zorder>label_5</zorder>
+   <zorder>totalcomissao</zorder>
+   <zorder>label_6</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtbuscar</tabstop>
+  <tabstop>checkdata</tabstop>
+  <tabstop>datemin</tabstop>
+  <tabstop>datemax</tabstop>
+  <tabstop>cboestado</tabstop>
+  <tabstop>tabla</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tabla</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>lblindice</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>496</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
